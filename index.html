@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section"> 
+        <div class="relativ">
+            <div class="gg">
+            <img class="shary" src="./images/desiatiy.png" alt="shary">
+            <img class="kiy" src="./images/kiy.png" alt="kiy">
+            <img class="vosmoy" src="./images/vosmoy.png" alt="8">
+            <img class="devyatiy" src="./images/devyatiy.png" alt="9"> 
+            <img class="ten" src="./images/desiatiy.png" alt="10"> 
+            <img class="fife" src="./images/pyatiy.png" alt="5"> 
+            <img class="chtotacoe" src="./images/chtoeto.png" alt=""> 
+            <img class="miacick" src="./images/miach.png" alt="">
+            <div class="div">
+            <img class="ilon" src="./images/ilon.jpg" alt="ilon"> 
+            <img class="fon" src="./images/images.jpg" alt="">
+            </div>
+         
+        </div> 
+        </div>
+    </section>
+    <style>
+        .section {
+            height: 100vh;
+            max-width: 100vw;
+            background-image: url(./images/stol.jpg);
+            background-position-y: -30%;
+            background-size: cover;
+            
+          
+        }
+        .div .ilon {
+            width: 245px;
+            margin-left: 500px;
+        }
+        .div .fon {
+            width: 270px;
+            margin-left: 970px;
+            margin-top: 40px;
+            overflow: hidden;
+        }
+        .gg img {
+            width: 40px;
+            position: absolute;
+        }
+        .relativ {
+            position: relative;
+            
+        }
+       .shary {
+            position: absolute;
+            width: 40px;
+            left: 43%;
+            top: 250px;
+            z-index: 1;
+            
+            /* padding-bottom: 800px; */
+            
+        }
+        .gg:hover .shary {
+            animation-name: sharipoleteli;
+            animation-duration: 8000ms;
+            animation-timing-function: ease;
+            animation-delay: 850ms;
+            animation-iteration-count: 2;
+            
+        } 
+        @keyframes sharipoleteli {
+            1% {
+                transform: translateY(-30px);
+            }
+            5% {
+                transform: translateY(-120px);
+            }
+            15% {
+                transform: translateX(270px) rotate(250deg);
+               
+            }
+            
+        }
+        .vosmoy {
+            position: absolute;
+            left: 50%;
+            top: 320px;
+            width: 40px;
+            z-index: 1;
+        }
+        .gg:hover .vosmoy {
+            animation-name: poletnormalnyy;
+            animation-duration: 8000ms;
+            animation-timing-function: linear;
+            animation-delay: 500ms;
+            animation-iteration-count: 1;
+            /* left: 110%;
+            top: 180px; */
+        }
+        
+        @keyframes poletnormalnyy {
+            2% {
+                transform: translateY(-80px);
+               
+            }
+            4% {
+                transform: translateY(-170px);
+            }
+            7% {
+                transform: translateX(380px);
+                /* transform: translateY(40px) */
+
+            }
+            15% {
+                transform: translateY(40px);
+            }
+            25% {
+                transform: translateX(-380px);
+            }
+            40% {
+                transform: translateY(-200px);
+            }
+            60% {
+                transform: translatex(200px) rotate(250deg);
+            }
+        }
+        .devyatiy {
+            position: absolute;
+            left: 50%;
+            top: 270px;
+            width: 40px;
+            z-index: 2;
+        }
+        .gg:hover .devyatiy {
+            animation-name: poletdevyatogo;
+            animation-duration: 8000ms;
+            animation-timing-function: linear;
+            animation-delay: 500ms;
+            animation-iteration-count: 1;
+        }
+        @keyframes poletdevyatogo {
+            2% {
+                transform: translateY(-90px);
+               
+            }
+            4% {
+                transform: translateX(-350px);
+            }
+            7% {
+                transform: translateX(240px);
+                
+                } 
+
+            
+            15% {
+                transform: translateY(-100px);
+            }
+           
+            35% {
+                transform: translateY(130px);
+            }
+             
+             40% {
+                transform: translateX(-100px) rotate(250deg);
+            }
+   
+                
+             
+        }
+        .ten {
+            position: absolute;
+            left: 50%;
+            top: 180px;
+            width: 40px;
+            z-index: 2;
+        }
+        .gg:hover .ten {
+            animation-name: poletten;
+            animation-duration: 10000ms;
+            animation-timing-function: linear;
+            animation-delay: 700ms;
+            animation-iteration-count: 1;
+        }
+        @keyframes poletten {
+            2% {
+                transform: translateY(-30px);
+            }
+            5% {
+                transform: translateX(140px);
+            }
+            10% {
+                transform: translateY(210px) rotate(-250deg);
+            }
+            18% {
+                transform: translateX(-210px) rotate(250deg);
+            }
+            19% {
+                transform: scale(0);
+            }
+        }
+        .fife  {
+            position: absolute;
+            left: 35%;
+            top: 240px;
+            width: 40px;
+            z-index: 2;
+        }
+        .gg:hover .fife {
+            animation-name: poletfife;
+            animation-duration: 10000ms;
+            animation-timing-function: ease;
+            animation-delay: 800ms;
+            animation-iteration-count: 1;
+        }
+        @keyframes poletfife {
+            4% {
+                transform: translateX(-90px) scale(1.2);
+            }
+            15% {
+                transform: translateX(480px) rotate(225deg);
+            }
+            20% {
+                transform: scale(0);
+                /* transform: translateY(140px) rotate(-180deg); */
+            }
+        }
+        .chtotacoe {
+                position: absolute;
+                left: 34%;
+                top: 255px;
+                width: 40px;
+                z-index: 3;
+        }
+        .gg:hover .chtotacoe {
+            animation-name: poletchtotacoe;
+            animation-duration: 10000ms;
+            animation-timing-function: linear;
+            animation-delay: 800ms;
+            animation-iteration-count: 1;
+        }
+        @keyframes poletchtotacoe {
+            2% {
+                transform: translateX(-110px) rotate(-250deg);
+            }
+            4% {
+                transform: translateY(80px) skew(2deg) scale(1.25);
+                
+            }
+            15% {
+                /* transform-origin: bottom right; */
+                
+                transform: translateX(250px); 
+            }
+            25% {
+                transform: translateX(300px) rotate(-250deg);
+            }
+            35% {
+                transform: translateY(-130px) rotate(250deg);
+            }
+            30% {
+                /* transform: scale(0); */
+            }
+            /*
+            12% {
+                transform: translateX(450px);
+            } */
+        }
+      
+        .miacick {
+                position: absolute;
+                left: 37%;
+                top: 263px;
+                width: 40px;
+                z-index: 1;
+        }
+        .gg:hover .miacick {
+            animation-name: poletmiacick;
+            animation-duration: 10000ms;
+            animation-timing-function: linear;
+            animation-delay: 800ms;
+            animation-iteration-count: 1;
+        }
+        @keyframes poletmiacick {
+            2% {
+                transform: translateY(-140px) rotate(-250deg);
+            }
+        
+            4% {
+                transform: translateY(120px) skew(2deg) scale(1.25);
+            
+            }
+            8% {
+                transform: translateX(-135px) rotate(250deg);
+            }
+            9% {
+                transform: scale(0);
+            }
+            20% {
+                /* transform: translateY(-100px); */
+            }
+        }
+        .gg img.kiy{
+            position: absolute;
+            overflow: hidden;
+            left: 30%;
+            top: 370px;
+            width: 20%;
+            z-index: 2;
+            
+        } 
+        .gg .kiy:hover {
+            animation-name: olenkajjet;
+            animation-duration: 10000ms;
+            animation-timing-function: linear;
+            animation-delay: 500ms;
+            animation-iteration-count: 1;
+            
+            
+        }
+        @keyframes olenkajjet {
+            1% {
+                transform: translateY(-90px)
+                
+            }
+            2% {
+                transform: scale(0.7);
+           
+            }
+            100% {
+
+                transform: rotateZ(40deg);
+            }
+        }
+      
+    </style>
+</body>
+</html>
